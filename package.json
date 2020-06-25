@@ -1,0 +1,33 @@
+{
+  "name": "@paulrberg/default-template",
+  "description": "To be used when building a new personal project from scratch",
+  "version": "1.0.0",
+  "author": {
+    "name": "Sablier",
+    "email": "hello@sablier.finance",
+    "url": "https://sablier.finance"
+  },
+  "bugs": {
+    "url": "https://github.com/paulrberg/repository-name/issues"
+  },
+  "devDependencies": {
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "husky": "^4.2.5",
+    "prettier": "^2.0.5"
+  },
+  "homepage": "https://github.com/paulrberg/repository-name#readme",
+  "license": "LGPL-3.0-or-later",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulrberg/repository-name"
+  },
+  "scripts": {
+    "commit": "git-cz",
+    "prettier": "prettier --config .prettierrc --write '**/*.{js,json,md,ts}'",
+    "prettier:list-different": "prettier --config .prettierrc --list-different '**/*.{js,json,md,ts}'"
+  }
+}
