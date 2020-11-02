@@ -3,9 +3,8 @@
   "description": "To be used when building a new personal project from scratch",
   "version": "1.0.0",
   "author": {
-    "name": "Sablier",
-    "email": "hello@sablier.finance",
-    "url": "https://sablier.finance"
+    "name": "Paul Razvan Berg",
+    "url": "https://paulrberg.com"
   },
   "bugs": {
     "url": "https://github.com/paulrberg/default-template/issues"
@@ -19,7 +18,7 @@
     "prettier": "^2.1.2"
   },
   "homepage": "https://github.com/paulrberg/default-template#readme",
-  "license": "LGPL-3.0-or-later",
+  "license": "WTFPL",
   "publishConfig": {
     "access": "public"
   },
@@ -29,7 +28,7 @@
   },
   "scripts": {
     "commit": "git-cz",
-    "prettier": "prettier --config .prettierrc --write '**/*.{js,json,md,ts}'",
-    "prettier:list-different": "prettier --config .prettierrc --list-different '**/*.{js,json,md,ts}'"
+    "prettier": "prettier --config .prettierrc --write \"**/*.{js,json,md,ts}\"",
+    "prettier:list-different": "prettier --config .prettierrc --list-different \"**/*.{js,json,md,ts}\""
   }
 }
