@@ -1,30 +1,30 @@
 {
-  "name": "@paulrberg/default-template",
-  "description": "To be used when building a new personal project from scratch",
+  "name": "@paulrberg/javascript-template",
+  "description": "To be used when building a new JavaScript project from scratch",
   "version": "1.0.0",
   "author": {
     "name": "Paul Razvan Berg",
     "url": "https://paulrberg.com"
   },
   "bugs": {
-    "url": "https://github.com/paulrberg/default-template/issues"
+    "url": "https://github.com/paulrberg/javascript-template/issues"
   },
   "devDependencies": {
-    "@commitlint/cli": "^9.1.2",
-    "@commitlint/config-conventional": "^9.1.2",
-    "commitizen": "^4.2.2",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "commitizen": "^4.2.3",
     "cz-conventional-changelog": "^3.3.0",
-    "husky": "^4.3.0",
-    "prettier": "^2.1.2"
+    "husky": "^6.0.0",
+    "prettier": "^2.2.1"
   },
-  "homepage": "https://github.com/paulrberg/default-template#readme",
+  "homepage": "https://github.com/paulrberg/javascript-template#readme",
   "license": "WTFPL",
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/paulrberg/default-template"
+    "url": "https://github.com/paulrberg/javascript-template"
   },
   "scripts": {
     "commit": "git-cz",
