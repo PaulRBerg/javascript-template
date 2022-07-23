@@ -1,6 +1,6 @@
 {
   "name": "@paulrberg/javascript-template",
-  "description": "Template for JavaScript projects",
+  "description": "A template for developing JavaScript projects, with sensible defaults",
   "version": "1.0.0",
   "author": {
     "name": "Paul Razvan Berg",
@@ -25,7 +25,14 @@
     "shx": "^0.3.4"
   },
   "homepage": "https://github.com/paulrberg/javascript-template#readme",
-  "packageManager": "yarn@3.2.0",
+  "keywords": [
+    "eslint",
+    "javascript",
+    "prettier",
+    "template",
+    "yarn"
+  ],
+  "packageManager": "yarn@3.2.2",
   "publishConfig": {
     "access": "public"
   },
@@ -35,14 +42,13 @@
   },
   "scripts": {
     "clean": "shx rm -rf ./dist",
-    "commit": "git-cz",
     "lint": "yarn lint:js && yarn prettier:check",
-    "lint:js": "eslint --config ./.eslintrc.yaml --ignore-path ./.eslintignore --ext .js .",
+    "lint:js": "eslint --config \"./.eslintrc.yml\" --ignore-path \"./.eslintignore\" --ext .js .",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
-    "prettier": "prettier --config ./.prettierrc.yaml --ignore-path ./.prettierignore --write \"**/*.{js,json,md,yaml,yml}\"",
-    "prettier:check": "prettier --check --config ./.prettierrc.yaml --ignore-path ./.prettierignore \"**/*.{js,json,md,yaml,yml}\"",
+    "prettier": "prettier --config \"./.prettierrc.yml\" --ignore-path \"./.prettierignore\" --write \"**/*.{js,json,md,yml}\"",
+    "prettier:check": "prettier --check --config \"./.prettierrc.yml\" --ignore-path \"./.prettierignore\" \"**/*.{js,json,md,yml}\"",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
   }
