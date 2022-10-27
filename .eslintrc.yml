@@ -1,39 +1,40 @@
+env:
+  es6: true
+  node: true
 extends:
-  - "eslint:recommended"
-  - "prettier"
+  - eslint:recommended
+  - prettier
+parserOptions:
+  ecmaVersion: "latest"
 rules:
-  arrow-body-style: "off"
+  arrow-body-style: off
   comma-dangle:
-    - "error"
-    - "always-multiline"
+    - error
+    - always-multiline
   curly:
-    - "error"
-    - "all"
+    - error
+    - all
   func-names:
-    - "error"
-    - "as-needed"
-  import/no-dynamic-require: "off"
+    - error
+    - as-needed
   import/no-extraneous-dependencies: "off"
   import/prefer-default-export: "off"
   indent: "off"
-  linebreak-style: "off"
   no-console: "off"
-  no-else-return: "off"
-  no-lonely-if: "off"
   no-trailing-spaces:
-    - "error"
-    - "ignoreComments": true
+    - error
+    - ignoreComments: true
   no-unused-vars:
-    - "error"
-    - "argsIgnorePattern": _
-    - "varsIgnorePattern": _
+    - error
+    - argsIgnorePattern: _
+      varsIgnorePattern: _
   prefer-template: "off"
   quotes:
-    - "error"
-    - "double"
-    - "avoidEscape": true
+    - error
+    - double
+    - avoidEscape: true
   spaced-comment:
-    - "error"
-    - "always"
-    - "exceptions":
+    - error
+    - always
+    - exceptions:
         - "*"
