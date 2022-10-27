@@ -10,18 +10,16 @@
     "url": "https://github.com/paulrberg/javascript-template/issues"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
-    "commitizen": "^4.2.4",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "commitizen": "^4.2.5",
     "cz-conventional-changelog": "^3.3.0",
-    "eslint": "^8.12.0",
-    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint": "^8.26.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-import": "^2.25.4",
-    "husky": "^7.0.4",
-    "lint-staged": "^12.3.7",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
     "pinst": "^3.0.0",
-    "prettier": "^2.6.2",
+    "prettier": "^2.7.1",
     "shx": "^0.3.4"
   },
   "homepage": "https://github.com/paulrberg/javascript-template#readme",
@@ -43,12 +41,12 @@
   "scripts": {
     "clean": "shx rm -rf ./dist",
     "lint": "yarn lint:js && yarn prettier:check",
-    "lint:js": "eslint --config \"./.eslintrc.yml\" --ignore-path \"./.eslintignore\" --ext .js .",
+    "lint:js": "eslint --ext .js .",
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
-    "prettier": "prettier --config \"./.prettierrc.yml\" --ignore-path \"./.prettierignore\" --write \"**/*.{js,json,md,yml}\"",
-    "prettier:check": "prettier --check --config \"./.prettierrc.yml\" --ignore-path \"./.prettierignore\" \"**/*.{js,json,md,yml}\"",
+    "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
+    "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
     "prepack": "pinst --disable",
     "postpack": "pinst --enable"
   }
