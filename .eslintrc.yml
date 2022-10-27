@@ -1,7 +1,6 @@
 extends:
   - "eslint:recommended"
   - "prettier"
-  - "airbnb-base"
 rules:
   arrow-body-style: "off"
   comma-dangle:
@@ -18,11 +17,6 @@ rules:
   import/prefer-default-export: "off"
   indent: "off"
   linebreak-style: "off"
-  max-len:
-    - "warn"
-    - "120"
-    - "ignoreComments": true
-    - "ignoreTrailingComments": true
   no-console: "off"
   no-else-return: "off"
   no-lonely-if: "off"
@@ -43,4 +37,3 @@ rules:
     - "always"
     - "exceptions":
         - "*"
-  strict: "off"
