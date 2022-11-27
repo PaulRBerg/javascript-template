@@ -45,9 +45,9 @@
     "postinstall": "husky install",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
+    "postpack": "pinst --enable",
     "prettier": "prettier --write \"**/*.{js,json,md,yml}\"",
     "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
-    "prepack": "pinst --disable",
-    "postpack": "pinst --enable"
+    "prepack": "pinst --disable"
   }
 }
