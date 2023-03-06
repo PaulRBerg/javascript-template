@@ -4,7 +4,7 @@ A template for developing JavaScript projects, with sensible defaults.
 
 ## Getting Started
 
-Click the [`Use this template`](https://github.com/paulrberg/javascript-template/generate) button at the top of the page
+Click the [`Use this template`](https://github.com/PaulRBerg/javascript-template/generate) button at the top of the page
 to create a new repository with this repo as the initial state.
 
 ## Sensible Defaults
