@@ -13,7 +13,7 @@
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
     "prettier": "^2.8.4",
-    "shx": "^0.3.4"
+    "rimraf": "^4.3.0"
   },
   "homepage": "https://github.com/paulrberg/javascript-template#readme",
   "keywords": [
@@ -32,7 +32,7 @@
     "url": "https://github.com/paulrberg/javascript-template"
   },
   "scripts": {
-    "clean": "shx rm -rf ./dist",
+    "clean": "rimraf ./dist",
     "lint": "yarn lint:js && yarn prettier:check",
     "lint:js": "eslint --ext .js .",
     "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
