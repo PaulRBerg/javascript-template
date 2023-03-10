@@ -19,11 +19,10 @@
   "keywords": [
     "eslint",
     "javascript",
+    "pnpm",
     "prettier",
-    "template",
-    "yarn"
+    "template"
   ],
-  "packageManager": "yarn@3.4.1",
   "publishConfig": {
     "access": "public"
   },
@@ -33,7 +32,7 @@
   },
   "scripts": {
     "clean": "rimraf ./dist",
-    "lint": "yarn lint:js && yarn prettier:check",
+    "lint": "pnpm lint:js && pnpm prettier:check",
     "lint:js": "eslint --ext .js .",
     "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
     "prettier:write": "prettier --write \"**/*.{js,json,md,yml}\""
