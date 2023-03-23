@@ -10,8 +10,10 @@
     "url": "https://github.com/PaulRBerg/javascript-template/issues"
   },
   "devDependencies": {
+    "@eslint/js": "^8.36.0",
     "eslint": "^8.35.0",
     "eslint-config-prettier": "^8.7.0",
+    "globals": "^13.20.0",
     "prettier": "^2.8.4",
     "rimraf": "^4.3.0"
   },
@@ -33,8 +35,9 @@
   "scripts": {
     "clean": "rimraf ./dist",
     "lint": "pnpm lint:js && pnpm prettier:check",
-    "lint:js": "eslint --ext .js .",
+    "lint:js": "eslint .",
     "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
     "prettier:write": "prettier --write \"**/*.{js,json,md,yml}\""
-  }
+  },
+  "type": "module"
 }

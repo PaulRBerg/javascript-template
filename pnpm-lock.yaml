@@ -1,14 +1,18 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@eslint/js': ^8.36.0
   eslint: ^8.35.0
   eslint-config-prettier: ^8.7.0
+  globals: ^13.20.0
   prettier: ^2.8.4
   rimraf: ^4.3.0
 
 devDependencies:
+  '@eslint/js': 8.36.0
   eslint: 8.36.0
   eslint-config-prettier: 8.8.0_eslint@8.36.0
+  globals: 13.20.0
   prettier: 2.8.6
   rimraf: 4.4.1
 

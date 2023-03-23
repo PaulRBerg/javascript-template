@@ -8,6 +8,7 @@ node_modules
 *.log
 .DS_Store
 .pnp.*
+eslint.config.js
 npm-debug.log
 package-lock.json
 yarn.lock
