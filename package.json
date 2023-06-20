@@ -37,7 +37,7 @@
     "clean": "rimraf ./dist",
     "lint": "pnpm lint:js && pnpm prettier:check",
     "lint:js": "eslint --ext .js .",
-    "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\"",
-    "prettier:write": "prettier --write \"**/*.{js,json,md,yml}\""
+    "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\" .",
+    "prettier:write": "prettier --write \"**/*.{js,json,md,yml}\" ."
   }
 }
