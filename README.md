@@ -22,6 +22,10 @@ This template comes with sensible default configurations in the following files:
 └── package.json
 ```
 
+### Dependency Management
+
+This template uses [Bun](https://bun.sh) for dependency management.
+
 ## Usage
 
 See the `scripts` section in the [`package.json`](./package.json) file.

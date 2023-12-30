@@ -20,22 +20,18 @@
   ],
   "homepage": "https://github.com/PaulRBerg/javascript-template#readme",
   "keywords": [
+    "bun",
     "eslint",
     "javascript",
-    "pnpm",
     "prettier",
     "template"
   ],
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/PaulRBerg/javascript-template"
-  },
+  "repository": "github.com/PaulRBerg/javascript-template",
   "scripts": {
-    "clean": "rimraf ./dist",
-    "lint": "pnpm lint:js && pnpm prettier:check",
+    "lint": "bun run lint:js && bun run prettier:check",
     "lint:js": "eslint --ext .js .",
     "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\" .",
     "prettier:write": "prettier --write \"**/*.{js,json,md,yml}\" ."

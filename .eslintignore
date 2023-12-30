@@ -1,6 +1,4 @@
 # directories
-build
-dist
 node_modules
 
 # files
