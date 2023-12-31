@@ -6,6 +6,7 @@ node_modules
 *.log
 .DS_Store
 .pnp.*
+bun.lockb
 npm-debug.log
 package-lock.json
 pnpm-lock.yaml
