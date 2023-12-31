@@ -7,7 +7,9 @@ A template for developing JavaScript projects, with sensible defaults.
 Click the [`Use this template`](https://github.com/PaulRBerg/javascript-template/generate) button at the top of the page
 to create a new repository with this repo as the initial state.
 
-## Sensible Defaults
+## Features
+
+### Sensible Defaults
 
 This template comes with sensible default configurations in the following files:
 
@@ -18,9 +20,12 @@ This template comes with sensible default configurations in the following files:
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc.yml
-├── .yarnrc.yml
 └── package.json
 ```
+
+### Dependency Management
+
+This template uses [Bun](https://bun.sh) for managing dependencies.
 
 ## Usage
 
