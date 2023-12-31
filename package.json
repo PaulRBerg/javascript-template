@@ -29,7 +29,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": "github.com/PaulRBerg/javascript-template",
   "scripts": {
     "lint": "bun run lint:js && bun run prettier:check",
     "lint:js": "eslint --ext .js .",
