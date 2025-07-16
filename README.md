@@ -9,23 +9,23 @@ to create a new repository with this repo as the initial state.
 
 ## Features
 
-### Sensible Defaults
+### Tools
+
+- [Bun](https://bun.sh)
+- [Biome](https://biomejs.dev)
+
+### Configuration
 
 This template comes with sensible default configurations in the following files:
 
 ```text
 ├── .editorconfig
-├── .eslintignore
-├── .eslintrc.yml
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc.yml
+├── biome.jsonc
 └── package.json
 ```
-
-### Dependency Management
-
-This template uses [Bun](https://bun.sh) for managing dependencies.
 
 ## Usage
 

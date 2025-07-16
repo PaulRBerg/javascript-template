@@ -6,33 +6,28 @@
     "name": "Paul Razvan Berg",
     "url": "https://github.com/PaulRBerg"
   },
-  "bugs": {
-    "url": "https://github.com/PaulRBerg/javascript-template/issues"
-  },
   "devDependencies": {
-    "eslint": "^8.35.0",
-    "eslint-config-prettier": "^8.7.0",
-    "prettier": "^2.8.4",
-    "rimraf": "^4.3.0"
+    "@biomejs/biome": "^2.1.1",
+    "prettier": "^3.6.2"
   },
   "files": [
-    "src"
+    "dist"
   ],
-  "homepage": "https://github.com/PaulRBerg/javascript-template#readme",
   "keywords": [
+    "biome",
     "bun",
-    "eslint",
     "javascript",
-    "prettier",
     "template"
   ],
-  "publishConfig": {
-    "access": "public"
-  },
+  "private": true,
   "scripts": {
-    "lint": "bun run lint:js && bun run prettier:check",
-    "lint:js": "eslint --ext .js .",
-    "prettier:check": "prettier --check \"**/*.{js,json,md,yml}\" .",
-    "prettier:write": "prettier --write \"**/*.{js,json,md,yml}\" ."
+    "biome-check": "biome check .",
+    "biome-write": "biome check --write . && bun run biome-write:imports",
+    "biome-write:imports": "biome lint --write --only correctness/noUnusedImports .",
+    "clean": "bunx del-cli dist",
+    "full-check": "bun run biome-check && bun run prettier-check",
+    "full-write": "bun run biome-write && bun run prettier-write",
+    "prettier-check": "prettier --cache --check \"**/*.{md,yml}\"",
+    "prettier-write": "prettier --cache --write \"**/*.{md,yml}\""
   }
 }
